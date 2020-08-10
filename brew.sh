@@ -145,9 +145,6 @@ brew install phpunit
 brew tap homebrew/cask-fonts
 brew cask install font-hack
 brew cask install font-source-code-pro
-brew cask install font-fira-code-nerd-font
-brew cask install font-hack-nerd-font
-brew cask install font-inconsolata-nerd-font
 
 # Install bash completions
 brew install apm-bash-completion
@@ -214,9 +211,6 @@ brew install terraform_landscape
 
 # Linter for Terraform configs
 brew install tflint
-
-# Starship shell prompt
-brew install starship
 
 # Useful Quicklook additions
 brew cask install betterzip
