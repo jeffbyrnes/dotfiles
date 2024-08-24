@@ -1,8 +1,6 @@
-# Jeff’s dotfiles
+# Claire's dotfiles
 
-These were shamelessly lifted from [Matthias Bynens](https://github.com/jeffbyrnes) dotfiles, and edited to suit my setup.
-
-![Screenshot of my shell prompt](https://i.imgur.com/EkEtphC.png)
+These were shamelessly lifted from Jeff, Matthias, and the Internet, then edited to suit me.
 
 ## Installation
 
@@ -13,7 +11,7 @@ These were shamelessly lifted from [Matthias Bynens](https://github.com/jeffbyrn
 You can clone the repository wherever you want. (I like to keep it in `~/.dotfiles`.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/jeffbyrnes/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/yoclaire/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -33,14 +31,14 @@ set -- -f; source bootstrap.sh
 To install these dotfiles without Git:
 
 ```bash
-cd; curl -#L https://github.com/jeffbyrnes/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
+cd; curl -#L https://github.com/yoclaire/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
 ```
 
 To update later on, just run that command again.
 
 ### Specify the `$PATH`
 
-If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/jeffbyrnes/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-L26)) takes place.
+If `~/.path` exists, it will be sourced along with the other files, before any feature testing (such as [detecting which version of `ls` is being used](https://github.com/yoclaire/dotfiles/blob/aff769fd75225d8f2e481185a71d5e05b76002dc/.aliases#L21-L26)) takes place.
 
 Here’s an example `~/.path` file that adds `/usr/local/bin` to the `$PATH`:
 
@@ -57,15 +55,15 @@ My `~/.extra` looks something like this:
 ```bash
 # Git credentials
 # Not in the repository, to prevent people from accidentally committing under my name
-GIT_AUTHOR_NAME="Jeff Byrnes"
+GIT_AUTHOR_NAME="Claire"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="thejeffbyrnes@gmail.com"
+GIT_AUTHOR_EMAIL="yoclaire@pm.me"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
 
-You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/jeffbyrnes/dotfiles/fork) instead, though.
+You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/yoclaire/dotfiles/fork) instead, though.
 
 ### Sensible macOS defaults
 
@@ -88,16 +86,13 @@ Some of the functionality of these dotfiles depends on formulae installed by `br
 ## Feedback
 
 Suggestions/improvements
-[welcome](https://github.com/jeffbyrnes/dotfiles/issues)!
+[welcome](https://github.com/yoclaire/dotfiles/issues)!
 
-## Author
-
-| [![twitter/thejeffbyrnes](http://gravatar.com/avatar/e9e409ecf5d0650e6a987a174444795b?s=70)](http://twitter.com/thejeffbyrnes "Follow @thejeffbyrnes on Twitter") |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Jeff Byrnes](http://thejeffbyrnes.com/)                                                                                                                          |
+                                                                                                                       |
 
 ## Thanks to…
-
+* [Jeff Byrnes](http://thejeffbyrnes.com/)  for his [dotfiles], which this repository is a fork of.
 * [Mathias Bynens](http://mathiasbynens.be/) for his [dotfiles](http://mths.be/dotfiles), which this repository is a fork of.
 * @ptb and [his _macOS Setup_ repository](https://github.com/ptb/mac-setup)
 * [Ben Alman](http://benalman.com/) and his [dotfiles repository](https://github.com/cowboy/dotfiles)
