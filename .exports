@@ -61,10 +61,6 @@ export CSS_DIRECTORY="css"
 # Add DocBook package for XML generation (used for git-subtree)
 export XML_CATALOG_FILES="${HOMEBREW_PREFIX}/etc/xml/catalog"
 
-# Set bat theme
-# https://github.com/sharkdp/bat
-export BAT_THEME="Solarized (light)"
-
 # Perforce
 export P4USER="rbyrnes"
 export P4PORT="perforce.athenahealth.com:1666"
