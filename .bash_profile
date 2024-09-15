@@ -187,7 +187,7 @@ if command -v rbenv &>/dev/null; then eval "$(rbenv init -)"; fi
 
 # Enable pipenv completion
 if [ -f "${HOMEBREW_PREFIX}/bin/pipenv" ]; then
-	eval "$(pipenv --completion)"
+	eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
 fi
 
 if command -v op &>/dev/null; then
