@@ -192,10 +192,6 @@ brew install black
 brew install flake8
 brew install git-sweep3k
 
-# Install rbenv for multiple Ruby versions
-brew install ruby-build
-brew install rbenv
-
 brew install reattach-to-user-namespace
 
 # brew install the_silver_searcher

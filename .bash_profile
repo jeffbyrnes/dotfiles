@@ -181,10 +181,6 @@ if [ -f "${HOMEBREW_PREFIX}/bin/aws_completer" ]; then
 	complete -C aws_completer aws
 fi
 
-# Enable rbenv shims and autocompletion
-# github.com/sstephenson/rbenv/
-if command -v rbenv &>/dev/null; then eval "$(rbenv init -)"; fi
-
 # Enable pipenv completion
 if [ -f "${HOMEBREW_PREFIX}/bin/pipenv" ]; then
 	eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
