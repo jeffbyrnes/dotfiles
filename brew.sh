@@ -192,6 +192,10 @@ brew install black
 brew install flake8
 brew install git-sweep3k
 
+# Install Ruby & Ruby-LSP
+brew install ruby
+brew install ruby-lsp
+
 brew install reattach-to-user-namespace
 
 # brew install the_silver_searcher
