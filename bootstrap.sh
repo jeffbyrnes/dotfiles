@@ -20,7 +20,8 @@ function doIt() {
 		--exclude "dotfiles.code-workspace" \
 		-avh --no-perms . ~
 	mv "$HOME/editorconfig" "$HOME/.editorconfig"
-	source ~/.bash_profile
+	git clone --quiet git@github.com:jeffbyrnes/scm_breeze.git "$HOME/.scm_breeze"
+	source "$HOME/.bash_profile"
 }
 
 if [ "$1" == "--force" ] || [ "$1" == "-f" ]; then
