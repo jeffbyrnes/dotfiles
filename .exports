@@ -30,6 +30,8 @@ export LESS_TERMCAP_md="${yellow}"
 # https://github.com/sharkdp/bat
 if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+	export BAT_THEME_LIGHT='Solarized (light)'
+	export BAT_THEME_DARK='Solarized (dark)'
 else
 	# Don’t clear the screen after quitting a manual page.
 	export MANPAGER='less -X'

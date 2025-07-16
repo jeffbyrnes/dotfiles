@@ -212,13 +212,7 @@ alias tf="terraform"
 # cat, with color
 # https://github.com/sharkdp/bat
 if command -v bat &>/dev/null; then
-	# set bat theme based on if macOS is using Light or Dark mode
-	# https://github.com/sharkdp/bat?tab=readme-ov-file#dark-mode
-	if command -v /opt/homebrew/bin/brew &>/dev/null || command -v /usr/local/bin/brew &>/dev/null; then
-		alias cat="bat --theme='$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo Solarized \(dark\) || echo Solarized \(light\))'"
-	else
-		alias cat="bat"
-	fi
+	alias cat="bat"
 elif command -v ccat &>/dev/null; then
 	alias cat="ccat"
 fi
