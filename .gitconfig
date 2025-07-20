@@ -250,7 +250,6 @@ insteadOf = "https://bitbucket.org/"
 [init]
 
 defaultBranch = main
-templateDir = ~/.config/git/template/
 
 [filter "lfs"]
 clean = git-lfs clean -- %f
