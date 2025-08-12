@@ -240,12 +240,12 @@ netdata_dashboard() {
 }
 
 # Set up help $cmd to use bat for output highlighting
-# https://github.com/sharkdp/bat?tab=readme-ov-file#highlighting---help-messages
+# https://github.com/sharkdp/bat#highlighting---help-messages
 help() {
 	"$@" --help 2>&1 | bat --plain --language=help
 }
 
-# https://github.com/sharkdp/bat?tab=readme-ov-file#git-diff
+# https://github.com/sharkdp/bat#git-diff
 batdiff() {
 	git diff --name-only --relative --diff-filter=d | xargs bat --diff
 }
