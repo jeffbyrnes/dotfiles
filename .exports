@@ -32,6 +32,7 @@ if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 	export BAT_THEME_LIGHT='Solarized (light)'
 	export BAT_THEME_DARK='Solarized (dark)'
+	export BAT_THEME="${BAT_THEME_LIGHT}"
 else
 	# Don’t clear the screen after quitting a manual page.
 	export MANPAGER='less -X'
