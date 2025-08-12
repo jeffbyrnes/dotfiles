@@ -32,6 +32,14 @@ fi
 # Replace ls with eza
 # https://github.com/eza-community/eza
 if command -v eza &>/dev/null; then
+	# README: If $LS_COLORS is set, eza will use it to colorize output.
+	# If you want to use eza with a custom color scheme, you can set the
+	# `EZA_CONFIG_DIR` environment variable to point to a directory containing
+	# a `theme.yml` file with your custom colors.
+	# https://github.com/orgs/eza-community/discussions/1344#discussioncomment-13860851
+	unset LS_COLORS
+	export EZA_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/eza"
+
 	# Long form, groups, mark file types, file size
 	alias l="eza -lgF --icons"
 	alias ll="l"
