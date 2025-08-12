@@ -54,7 +54,7 @@ if command -v eza &>/dev/null; then
 	alias lat="eza -lgAF -s oldest --icons"
 
 	# List only directories, groups, mark file types
-	alias lsd="eza -lgFD --icons"
+	alias lsd="eza -lgDF --icons"
 else
 	# List dir contents aliases
 	# ref: http://ss64.com/osx/ls.html
