@@ -29,7 +29,8 @@ export LESS_TERMCAP_md="${yellow}"
 # Use bat as the pager for manpages
 # https://github.com/sharkdp/bat
 if command -v bat &>/dev/null; then
-	export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+	# README: https://github.com/sharkdp/bat#man
+	export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 	export BAT_THEME_LIGHT='Solarized (light)'
 	export BAT_THEME_DARK='Solarized (dark)'
 	export BAT_THEME="${BAT_THEME_LIGHT}"
