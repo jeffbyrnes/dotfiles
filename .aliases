@@ -224,3 +224,7 @@ if command -v bat &>/dev/null; then
 elif command -v ccat &>/dev/null; then
 	alias cat="ccat"
 fi
+
+# Tailscale
+# https://tailscale.com/kb/1080/cli?tab=macos
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
