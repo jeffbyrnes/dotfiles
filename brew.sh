@@ -241,7 +241,6 @@ brew install --cask qlprettypatch
 brew install --cask qlstephen
 brew install --cask qlvideo
 brew install --cask quicklook-csv
-brew install --cask quicklook-json
 brew install --cask quicklookase
 brew install --cask webpquicklook
 
