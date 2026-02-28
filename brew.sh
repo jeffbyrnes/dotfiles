@@ -255,7 +255,6 @@ brew install --cask latest
 # brew install --cask macdown
 brew install --cask rocket
 brew install --cask suspicious-package
-brew install --cask syntax-highlight
 brew install --cask tower
 brew install --cask transmit
 brew install --cask vlc
