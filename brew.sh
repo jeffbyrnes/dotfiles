@@ -240,7 +240,6 @@ brew install --cask qlmarkdown
 brew install --cask qlprettypatch
 brew install --cask qlstephen
 brew install --cask qlvideo
-brew install --cask quicklook-csv
 brew install --cask quicklookase
 
 # Install Dart Sass
