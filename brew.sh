@@ -234,7 +234,6 @@ brew install pillow
 
 # Useful Quicklook additions
 brew install --cask betterzip
-brew install --cask qlimagesize
 brew install --cask qlmarkdown
 brew install --cask qlprettypatch
 brew install --cask qlstephen
