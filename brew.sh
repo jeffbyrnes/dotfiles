@@ -258,7 +258,6 @@ brew install --cask suspicious-package
 brew install --cask tower
 brew install --cask transmit
 brew install --cask vlc
-brew install --cask xld
 
 # 1Password 8 CLI
 brew install --cask 1password-cli
