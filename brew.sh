@@ -236,7 +236,6 @@ brew install pillow
 brew install --cask betterzip
 brew install --cask qlmarkdown
 brew install --cask qlvideo
-brew install --cask quicklookase
 
 # Install Dart Sass
 brew install sass/sass/sass
