@@ -188,7 +188,7 @@ brew install yarn
 brew install python
 brew install black
 brew install flake8
-brew install git-sweep3k
+brew install jeffbyrnes/misc/git-sweep3k
 
 # Install Ruby & Ruby-LSP
 brew install ruby
