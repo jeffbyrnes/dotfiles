@@ -155,7 +155,6 @@ brew install asciinema
 # brew install phpunit
 
 # Install typefaces
-brew tap homebrew/cask-fonts
 brew install --cask font-fira-code-nerd-font
 brew install --cask font-hack-nerd-font
 brew install --cask font-inconsolata-nerd-font
