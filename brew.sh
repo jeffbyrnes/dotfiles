@@ -161,7 +161,6 @@ brew install --cask font-inconsolata-nerd-font
 brew install --cask font-monaspace
 
 # Install bash completions
-brew install brew-cask-completion
 brew install bundler-completion
 brew install docker-completion
 brew install gem-completion
