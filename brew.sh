@@ -241,7 +241,6 @@ brew install --cask qlvideo
 brew install sass/sass/sass
 
 # Useful macOS apps
-brew install --cask chronosync
 brew install --cask dash
 # brew install --cask diffmerge
 brew install --cask discord
