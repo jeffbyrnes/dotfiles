@@ -253,7 +253,6 @@ brew install --cask keepingyouawake
 # brew install --cask keybase
 brew install --cask latest
 # brew install --cask macdown
-brew install --cask macupdater
 brew install --cask rocket
 brew install --cask suspicious-package
 brew install --cask syntax-highlight
