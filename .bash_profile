@@ -188,7 +188,9 @@ fi
 
 if command -v op &>/dev/null; then
 	source <(op completion bash)
-	source "${HOME}/.config/op/plugins.sh"
+	if [ -f "${HOME}/.config/op/plugins.sh" ]; then
+		source "${HOME}/.config/op/plugins.sh"
+	fi
 fi
 
 # Depends on us having set the alias for tmux to start in control mode
