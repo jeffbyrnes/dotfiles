@@ -186,6 +186,10 @@ if [ -f "${HOMEBREW_PREFIX}/bin/pipenv" ]; then
 	eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
 fi
 
+if [ -f "${HOMEBREW_PREFIX}/bin/perl" ]; then
+	eval "$(perl -I$HOME/.perl/lib/perl5 -Mlocal::lib=$HOME/.perl)"
+fi
+
 if command -v op &>/dev/null; then
 	source <(op completion bash)
 	if [ -f "${HOME}/.config/op/plugins.sh" ]; then
