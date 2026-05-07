@@ -33,7 +33,6 @@ if command -v bat &>/dev/null; then
 	export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 	export BAT_THEME_LIGHT='Solarized (light)'
 	export BAT_THEME_DARK='Solarized (dark)'
-	export BAT_THEME="${BAT_THEME_LIGHT}"
 else
 	# Don’t clear the screen after quitting a manual page.
 	export MANPAGER='less -X'
