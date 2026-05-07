@@ -183,7 +183,7 @@ fi
 
 # Enable pipenv completion
 if [ -f "${HOMEBREW_PREFIX}/bin/pipenv" ]; then
-	eval "$(_PIPENV_COMPLETE=bash_source pipenv)"
+	eval "$(register-python-argcomplete pipenv)"
 fi
 
 if [ -f "${HOMEBREW_PREFIX}/bin/perl" ]; then
