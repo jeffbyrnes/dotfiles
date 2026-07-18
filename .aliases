@@ -41,20 +41,20 @@ if command -v eza &>/dev/null; then
 	export EZA_CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/eza"
 
 	# Long form, groups, mark file types, file size
-	alias l="eza -lgF --icons"
+	alias l="eza -lgF --icons auto"
 	alias ll="l"
 
 	# Long form, groups, mark file types, order by last modified
-	alias lt="eza -lgF -s oldest --icons"
+	alias lt="eza -lgF -s oldest --icons auto"
 
 	# Long form, groups, list all except . and ..., mark file types, file size
-	alias la="eza -lgaF --icons"
+	alias la="eza -lgaF --icons auto"
 
 	# Long form, groups, list all except . and ..., mark file types, order by last modified, file size
-	alias lat="eza -lgAF -s oldest --icons"
+	alias lat="eza -lgAF -s oldest --icons auto"
 
 	# List only directories, groups, mark file types
-	alias lsd="eza -lgDF --icons"
+	alias lsd="eza -lgDF --icons auto"
 else
 	# List dir contents aliases
 	# ref: http://ss64.com/osx/ls.html
