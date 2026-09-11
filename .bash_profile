@@ -186,8 +186,9 @@ if [ -f "${HOMEBREW_PREFIX}/bin/pipenv" ]; then
 	eval "$(register-python-argcomplete pipenv)"
 fi
 
-if [ -f "${HOMEBREW_PREFIX}/bin/perl" ]; then
-	eval "$(perl -I$HOME/.perl/lib/perl5 -Mlocal::lib=$HOME/.perl)"
+# Only set up local::lib if it is actually installed for this perl
+if perl -I"$HOME/.perl/lib/perl5" -Mlocal::lib -e 1 &>/dev/null; then
+	eval "$(perl -I"$HOME/.perl/lib/perl5" -Mlocal::lib="$HOME/.perl")"
 fi
 
 if command -v op &>/dev/null; then
